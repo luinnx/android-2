@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- 开始文档语法 -->
+<persons>
+    	<person  id="1">
+    	    <name>ssun</name>
+    	    <age>19</age>
+    	</person>
+    	<person  id="2">
+    	    <name>cobe</name>
+    	    <age>24</age>
+    	</person>
+</persons>

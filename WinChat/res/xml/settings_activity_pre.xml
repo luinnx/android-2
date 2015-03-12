@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="setting_demo_preference">
+	<PreferenceCategory xmlns:android="http://schemas.android.com/apk/res/android"
+		android:key="bell_settings" android:title="@string/bell_settings">
+		<ListPreference android:key="bell_list_preference"
+			android:title="@string/bell_title_list_preference" android:summary="@string/bell_summary_list_preference"
+			android:entries="@array/bell_entries_list_preference"
+			android:entryValues="@array/bell_entryvalues_list_preference"
+			android:dialogTitle="@string/bell_title_list_preference" />
+	</PreferenceCategory>
+	
+		<PreferenceCategory android:key="other_settings"
+		android:title="@string/other_settings">
+		<Preference android:key="about_setting_preference"
+			android:title="关于我们">
+		</Preference>
+		
+	</PreferenceCategory>
+	</PreferenceScreen>

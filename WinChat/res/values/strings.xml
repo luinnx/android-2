@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">Wifi-Chat</string>
+    <string name="menu_settings">Settings</string>
+    <string name="call">呼叫对讲</string>
+     <string name="log">对讲记录</string>
+      <string name="camera">图像监控</string>
+       <string name="sysset">系统设定</string>
+       <string name="leavemsg">我的留言</string>
+ <string name="bell_title_list_preference">铃声</string>
+    <string name="bell_summary_list_preference">自定义来电铃声</string>
+    <string name="dialog_title_list_preference">dialog_title_list_preference</string>
+    <string name="bell_settings">铃声设置</string>
+    <string name="dial_setting">操作音设置</string>
+    <string name="other_settings">其它设置</string>
+     <string name="add">附加功能</string>
+</resources>

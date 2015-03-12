@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <SurfaceView
+            android:id="@+id/mSurfaceViewleavemsg"
+            android:layout_width="500dp"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.64"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btncancleleave"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backred"
+            android:text="取消"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnsendleave"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgreen"
+            android:text="开始"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
