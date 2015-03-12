@@ -1,0 +1,3 @@
+E:\ydoa\CommonFramework\CommonFramework\CommonFramework\bin\Debug\CommonFramework.dll
+E:\ydoa\CommonFramework\CommonFramework\CommonFramework\bin\Debug\PsMono.Core.dll
+E:\ydoa\CommonFramework\CommonFramework\CommonFramework\bin\Debug\PsMono.Zlib.dll

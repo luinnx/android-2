@@ -1,0 +1,1 @@
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android"><item android:duration="100" android:drawable="@drawable/loading1" /><item android:duration="100" android:drawable="@drawable/loading2" /><item android:duration="100" android:drawable="@drawable/loading3" /></animation-list>

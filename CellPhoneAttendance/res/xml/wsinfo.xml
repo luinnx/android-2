@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServices>
+    <WebServer name="attendanceUp" namespace="urn:TimeMng.wiseyu.com/"
+        	   URL="/kpoa/app/hoa_appintegrated.nsf/WS_TimeMng?wsdl"
+        	   method="AttendanceUpload"></WebServer>
+    <WebServer name="attendanceCheckbuuser" namespace="urn:TimeMng.wiseyu.com/"
+        	   URL="/kpoa/app/hoa_appintegrated.nsf/WS_TimeMng?wsdl"
+        	   method="getRecordByUser"></WebServer>
+     <WebServer name="attendanceCheckbyphone" namespace="urn:TimeMng.wiseyu.com/"
+        	   URL="/kpoa/app/hoa_appintegrated.nsf/WS_TimeMng?wsdl"
+        	   method="getRecordByPhone"></WebServer>
+    <WebServer name="infoCheck" namespace="urn:TimeMng.wiseyu.com/"
+        	   URL="/kpoa/app/hoa_appintegrated.nsf/WS_TimeMng?wsdl"
+        	   method="DownloadContact"></WebServer>
+    <WebServer name="aboutInfo" namespace="urn:Login.wiseyu.com/"
+        	   URL="/kpoa/app/hoa_appintegrated.nsf/WS_AppLogin?wsdl"
+        	   method="About"></WebServer>
+    <WebServer name="logincheck" namespace="urn:Login.wiseyu.com/"
+        	   URL="/kpoa/app/hoa_appintegrated.nsf/WS_AppLogin?wsdl"
+        	   method="Login"></WebServer>
+     <WebServer name="customervisit" namespace="urn:TimeMng.wiseyu.com/"
+        	   URL="/kpoa/app/hoa_appintegrated.nsf/WS_TimeMng?wsdl"
+        	   method="Customervisits"></WebServer>
+</WebServices>

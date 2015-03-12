@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B291CF89-472F-4C8A-81E6-F2B859B1C5F9}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonFramework</RootNamespace>
+    <AssemblyName>CommonFramework</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidUseLatestPlatformSdk />
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="PsMono.Core">
+      <HintPath>..\..\..\CFOA_Mobile\MobCRM\10编码\Mono.Lib\PsMono.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PsMono.Zlib">
+      <HintPath>..\..\..\CFOA_Mobile\MobCRM\10编码\Mono.Lib\PsMono.Zlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Src\Activities\Detail.cs" />
+    <Compile Include="Src\Activities\Loading.cs" />
+    <Compile Include="Src\Activities\Login.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Src\Activities\Main.cs" />
+    <Compile Include="Src\Commons\AppEnvironment.cs" />
+    <Compile Include="Src\Domain\AppPage.cs" />
+    <Compile Include="Src\Domain\EnvManagerSvrIntf.cs" />
+    <Compile Include="Src\Domain\FuncEntry.cs" />
+    <Compile Include="Src\Commons\Util\CommonUtils.cs" />
+    <Compile Include="Src\Commons\Util\Constant.cs" />
+    <Compile Include="Src\Commons\Util\LogUtil.cs" />
+    <Compile Include="Src\Commons\Util\PsApplication.cs" />
+    <Compile Include="Src\Commons\Util\PsPropertiesUtil.cs" />
+    <Compile Include="Src\Commons\Util\Savehtmltolocal.cs" />
+    <Compile Include="Src\Commons\Util\Subscribe.cs" />
+    <Compile Include="Src\Commons\Wedget\BadgeView.cs" />
+    <Compile Include="Src\Commons\Wedget\FixGridLayout.cs" />
+    <Compile Include="Src\Commons\Wedget\LoadingDialog.cs" />
+    <Compile Include="Src\Commons\Wedget\MyImageButton.cs" />
+    <Compile Include="Src\Domain\LoginUser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Config.properties" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\Drawable-hdpi\btn_login_style.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable-hdpi\default_bg.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\Layout\login.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\loading.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\main.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\loadingdialog.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\detail.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\Values\color.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\qq_edit_login.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\input_over.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\login_back.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\login_input.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\login_button_nor.9.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\login_button_press.9.png" />
+    <AndroidResource Include="Resources\Values\styles.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\loading3.jpg" />
+    <AndroidResource Include="Resources\Drawable-hdpi\qq_btn_check.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\btn_check_on_selected.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\btn_check_off.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\btn_check_off_pressed.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\btn_check_off_selected.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\btn_check_on.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\btn_check_on_pressed.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\qq_checkbox_text_color.xml" />
+    <AndroidResource Include="Resources\Values\mystyle.xml" />
+    <AndroidResource Include="Resources\anim\loading.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\loading2.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\loading1.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\loading_bg.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\loading_progress_draw.xml" />
+    <AndroidResource Include="Resources\Drawable-hdpi\loading_drawable.png" />
+    <AndroidResource Include="Resources\Drawable-hdpi\loadingdialog_bg.xml" />
+    <Content Include="Reference\achart.dll" />
+    <Content Include="Reference\IKVM.OpenJDK.Core.dll" />
+    <Content Include="Reference\IKVM.Runtime.dll" />
+    <Content Include="Reference\IKVM.Runtime.JNI.dll" />
+    <AndroidResource Include="Resources\Drawable-hdpi\badge_ifaux.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Drawable-ldpi\" />
+    <Folder Include="Resources\Drawable-mdpi\" />
+    <Folder Include="Resources\Drawable-xhdpi\" />
+    <Folder Include="Resources\Drawable-xxhdpi\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

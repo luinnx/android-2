@@ -1,0 +1,16 @@
+CommonFramework.Src.Activities.Detail;commonframework.src.activities.Detail
+CommonFramework.Loading;commonframework.Loading
+CommonFramework.Loading.MessageHandler;commonframework.Loading_MessageHandler
+CommonFramework.Loading.LoadThread;commonframework.Loading_LoadThread
+CommonFramework.Login;commonframework.Login
+CommonFramework.Login.LoginThread;commonframework.Login_LoginThread
+CommonFramework.Login.LoginHandler;commonframework.Login_LoginHandler
+CommonFramework.Src.Activities.Main;commonframework.src.activities.Main
+CommonFramework.Src.Activities.Main.GetNewinfo;commonframework.src.activities.Main_GetNewinfo
+CommonFramework.Src.Activities.Main.MainHandler;commonframework.src.activities.Main_MainHandler
+CommonFramework.Src.Activities.Main.Refreshfun;commonframework.src.activities.Main_Refreshfun
+CommonFramework.Src.Activities.Main.SaveLoadImg;commonframework.src.activities.Main_SaveLoadImg
+CommonFramework.Src.Commons.Util.PsApplication;commonframework.src.commons.util.PsApplication
+CommonFramework.Src.Commons.Wedget.BadgeView;commonframework.src.commons.wedget.BadgeView
+CommonFramework.Src.Commons.Wedget.FixGridLayout;commonframework.src.commons.wedget.FixGridLayout
+CommonFramework.Src.Commons.Wedget.MyImageButton;commonframework.src.commons.wedget.MyImageButton

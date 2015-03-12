@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ty.winchat"
+    android:versionCode="2"
+    android:versionName="1.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="10" 
+        />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:name=".WinChatApplication" android:icon="@drawable/icon"  android:label="@string/app_name" android:theme="@style/AppTheme" android:allowBackup="true">
+        <activity android:name=".ui.Main" android:screenOrientation="landscape">
+           
+        </activity>
+        
+        
+        <activity android:name=".ui.MessageChat" android:windowSoftInputMode="stateHidden" android:screenOrientation="landscape"></activity>
+        <activity android:name=".ui.Set" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".ui.VoiceChat" android:screenOrientation="landscape"></activity>
+        <activity android:name=".ui.VideoChat" android:screenOrientation="landscape">
+           
+        </activity>
+        <activity android:name=".ui.FileChoose"></activity>
+        <activity android:name=".ui.RoomChat" android:windowSoftInputMode="stateHidden" android:screenOrientation="landscape"></activity>
+        
+        <service android:name=".service.ChatService" />
+        
+        <receiver android:name="com.ty.winchat.service.HeartBeatBroaadcastReceiver"></receiver>
+	    <service android:name="jay.media.MediaService"></service>
+	    <activity android:name="myAudioRecorder">
+	        
+	       
+	    </activity>
+	    <activity android:name="RecordAndPlay">
+	       
+	    </activity>
+	    <activity android:name=".ui.CallMain" android:screenOrientation="landscape">
+	         
+	    </activity>
+	    <activity android:name=".ui.RoomMain" android:screenOrientation="landscape">
+	          <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+	    </activity>
+	    <activity android:name=".ui.GetLog" android:screenOrientation="landscape"></activity>
+	    <activity android:name=".ui.Callaudioplay" android:screenOrientation="landscape">
+	        
+	    </activity>
+	    <activity android:name=".ui.SettingsActivity" android:screenOrientation="landscape"></activity>
+	    <activity android:name=".ui.Leavemessage" android:screenOrientation="landscape">
+	         
+	    </activity>
+	    <activity android:name=".ui.Seeleavemsg" android:screenOrientation="landscape"></activity>
+	    <activity android:name=".ui.GetLeavemsglog" android:screenOrientation="landscape"></activity>
+	    <activity android:name=".ui.About" android:screenOrientation="landscape"></activity>
+	     
+    </application>
+
+</manifest>
